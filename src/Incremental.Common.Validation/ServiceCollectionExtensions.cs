@@ -14,7 +14,7 @@ namespace Incremental.Common.Validation
         /// </summary>
         /// <param name="mvcBuilder"><see cref="IMvcBuilder"/>.</param>
         /// <param name="assemblies">Assembly or assemblies containing validators.</param>
-        /// <returns></returns>
+        /// <returns><see cref="IMvcBuilder"/></returns>
         public static IMvcBuilder AddCommonValidation(this IMvcBuilder mvcBuilder, params Assembly[] assemblies)
         {
             return mvcBuilder.AddFluentValidation(
